@@ -47,7 +47,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="30dp"
                         android:textSize="20sp"
-                        android:text="Release Date"/>
+                        android:text="@string/release_date"/>
 
                     <TextView
                         android:id="@+id/releaseDate"
@@ -79,7 +79,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="30dp"
                             android:textSize="20sp"
-                            android:text="Rating"/>
+                            android:text="@string/rating"/>
 
                     </LinearLayout>
 
@@ -113,7 +113,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="30dp"
                             android:textSize="20sp"
-                            android:text="Popularity"/>
+                            android:text="@string/popularity"/>
 
                     </LinearLayout>
 
@@ -141,7 +141,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="50dp"
                 android:textSize="30sp"
-                android:text="Overview"/>
+                android:text="@string/overview"/>
 
             <TextView
                 android:id="@+id/overview"

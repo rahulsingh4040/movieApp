@@ -41,6 +41,9 @@ class DetailedFragment : Fragment() {
 
         setHasOptionsMenu(true)
 
+        activity?.actionBar?.title = args.title
+        (activity as AppCompatActivity).supportActionBar?.title = args.title
+
         return binding.root
     }
 

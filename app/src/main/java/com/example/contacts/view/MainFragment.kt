@@ -8,6 +8,7 @@ import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.example.contacts.R
 import com.example.contacts.adapter.MovieListAdapter
 import com.example.contacts.data.MovieEntity
 import com.example.contacts.databinding.MainFragmentBinding
@@ -48,6 +49,9 @@ class MainFragment : Fragment(),
         }
 
         addSampleDataFromDatabase()
+
+        activity?.actionBar?.title = context?.resources?.getString(R.string.app_name)
+        (activity as AppCompatActivity).supportActionBar?.title = context?.resources?.getString(R.string.app_name)
 
         return binding.root
     }
