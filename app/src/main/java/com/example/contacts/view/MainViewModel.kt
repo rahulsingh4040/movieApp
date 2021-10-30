@@ -15,6 +15,7 @@ class MainViewModel(app: Application) : AndroidViewModel(app) {
     val contactsList = database?.movieDao()?.getAllMovies()
 
     fun addSampleData() {
+        // Adding data in background using kotlin coroutines
         viewModelScope.launch {
             withContext(Dispatchers.IO) {
                 val sampleData = DumyDataGenerator.getMovies()

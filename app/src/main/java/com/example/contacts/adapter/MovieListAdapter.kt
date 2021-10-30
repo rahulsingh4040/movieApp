@@ -41,7 +41,6 @@ class MovieListAdapter(
 
     interface ListItemListener {
         fun onItemClick(movie: MovieEntity)
-        fun onItemsSelectionChanged()
     }
 
 }

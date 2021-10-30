@@ -49,7 +49,6 @@ class DumyDataGenerator (path: String){
             movieList.add(MovieEntity("Dune", "2021-09-15", "Paul Atreides, a brilliant and gifted young man born into a great destiny beyond his understanding, must travel to the most dangerous planet in the universe to ensure the future of his family and his people. As malevolent forces explode into conflict over the planet's exclusive supply of the most precious resource in existence-a commodity capable of unlocking humanity's greatest potential-only those who can conquer their fear will survive."
                 , "5531.157", "8"))
 
-
             movieList.add(MovieEntity("Venom: Let There Be Carnage", "2021-09-30", "After finding a host body in investigative reporter Eddie Brock, the alien symbiote must face a new enemy, Carnage, the alter ego of serial killer Cletus Kasady.",
             "5783.658", "6.9"))
             return movieList

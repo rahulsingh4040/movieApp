@@ -1,7 +1,6 @@
 package com.example.contacts.view
 
 import android.os.Bundle
-import android.util.Log
 import android.view.*
 import androidx.fragment.app.Fragment
 import androidx.appcompat.app.AppCompatActivity
@@ -9,7 +8,6 @@ import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.example.contacts.R
 import com.example.contacts.adapter.MovieListAdapter
 import com.example.contacts.data.MovieEntity
 import com.example.contacts.databinding.MainFragmentBinding
@@ -57,10 +55,6 @@ class MainFragment : Fragment(),
     override fun onItemClick(movie: MovieEntity) {
         val action = MainFragmentDirections.actionMainFragmentToDetailedFragment(movie.title, movie.rating, movie.overview, movie.popularity, movie.releaseDate)
         findNavController().navigate(action)
-    }
-
-    override fun onItemsSelectionChanged() {
-        requireActivity().invalidateOptionsMenu()
     }
 
     private fun addSampleDataFromDatabase() {
